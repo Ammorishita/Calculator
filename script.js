@@ -46,7 +46,7 @@ let app = {
 			this.pendingValue = eval(this.display.value);
 			this.warning.value = '';
 		} catch(err) {
-			console.log(err)
+			console.log(err);
 		}
 		this.subDisplay.value = this.pendingValue;
 		if(this.subDisplay.value.length > 10) {
@@ -111,7 +111,7 @@ let app = {
 				} catch(err) {
 					this.warning.value = 'Invalid Expression';
 					this.display.value = '0';
-					this.pendingValue.value = ''
+					this.pendingValue.value = '';
 				}
 				break;
 			default:
