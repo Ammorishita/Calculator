@@ -8,32 +8,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1>Javascript Calculator</h1>		
+	</header>
 	<main>
 		<section>
 			<div id="calculator">
 				<div class="display">
-					<input type="text" disabled class="value" value="">
-					<input type="text" disabled class="value--final" value="">
+					<input type="text" disabled class="value" value="0">
+					<input type="text" disabled class="warning">
+					<input type="text" disabled class="value--pending" value="0">
 				</div>
 				<div class="row">
 					<div class="btn btn--clear">CE</div>
 					<div class="btn btn--clearAll">AC</div>
-					<div class="btn btn--input">/</div>
-					<div class="btn btn--input">x</div>
+					<div class="btn btn--input btn--operator">/</div>
+					<div class="btn btn--input btn--operator">*</div>
 				</div>
 				<div class="row">
 					<div class="btn btn--input">7</div>
 					<div class="btn btn--input">8</div>
 					<div class="btn btn--input">9</div>
 					<div class="btn btn--input">-</div>
-					
 				</div>
 				<div class="row">
 					<div class="btn btn--input">4</div>
 					<div class="btn btn--input">5</div>
 					<div class="btn btn--input">6</div>
 					<div class="btn btn--input">+</div>
-					
 				</div>
 				<div class="row">
 					<div class="btn btn--input">1</div>
